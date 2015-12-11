@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
-
-app.set('view engine', 'ejs');
-app.set('views', __dirname );
+var path = require('path');
+app.set('view engine','ejs');
+app.set('Views', __dirname);
 app.use(express.static(__dirname));
 
 song = {
